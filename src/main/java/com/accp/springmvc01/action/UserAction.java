@@ -12,6 +12,8 @@ public class UserAction {
 	@RequestMapping("/a")
 	public String test(Model model,User user) {	
 		System.out.println("第一次修改");
+		System.out.println("第二次修改");
+		System.out.println("第三次修改");
 		model.addAttribute("User",user);
 		return "/view/index.jsp";
 	}
