@@ -10,7 +10,8 @@ import com.accp.springmvc01.pojo.User;
 public class UserAction {
 	
 	@RequestMapping("/a")
-	public String test(Model model,User user) {		
+	public String test(Model model,User user) {	
+		System.out.println("第一次修改");
 		model.addAttribute("User",user);
 		return "/view/index.jsp";
 	}
